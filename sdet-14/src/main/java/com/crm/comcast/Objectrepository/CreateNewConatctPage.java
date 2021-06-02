@@ -1,4 +1,4 @@
-package com.crm.comcast.objectrepository;
+package com.crm.comcast.Objectrepository;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

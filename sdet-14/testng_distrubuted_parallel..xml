@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests"  thread-count="3">
+
+<test name="tr-1">
+    <classes>
+      <class name="com.crm.comcast.LeadTest.TC_02SearchLeadBYPhone"/>
+      
+      </classes>
+      </test>
+      
+     <test name="tr-2">
+     
+     <classes>
+      <class name="com.crm.comcast.LeadTest.TC_01CreateLeadByCompanyTest"/>
+      </classes>
+      </test>
+      
+      <test name="tr-3">
+      <classes>
+      <class name="com.crm.comcast.LeadTest.TC_03TestLeadByWebsite"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,4 +1,4 @@
-package com.crm.comcast.objectrepository;
+package com.crm.comcast.Objectrepository;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -43,6 +43,10 @@ public class HomePage extends WebDriverUtility {
   
   @FindBy(linkText = "Purchase Order")
   private WebElement purchaseOrderLnk;
+  
+  @FindBy(linkText = "Leads")
+  private WebElement leadpage;
+  
  //Step 4
 
 public WebElement getAdministationImg() {
@@ -110,5 +114,9 @@ public void navigateMore()
 public void navigatePurchaseOrder()
 {
 	purchaseOrderLnk.click();
+}
+
+public WebElement navigatetolead() {
+return leadpage;	
 }
 }

@@ -6,14 +6,8 @@ import java.util.HashMap;
 
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-/**
- * 
- * @author Deepak
- *
- */
+
 public class JsonFileUtility {
-	
-	
 	
 	/**
 	 *    used to read the common data from JSON file based  on key
@@ -37,7 +31,6 @@ public class JsonFileUtility {
 	        
 	        
         return value;
-	}
-	
 
+}
 }

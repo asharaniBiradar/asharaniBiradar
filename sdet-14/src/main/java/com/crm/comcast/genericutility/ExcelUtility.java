@@ -1,5 +1,4 @@
 package com.crm.comcast.genericutility;
-
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
@@ -9,20 +8,24 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
-/**
- * This class contains methods for reading the data in excel sheet
- * @author Deepak
- *
- */
+// * This class contains methods for reading the data in excel sheet
+
+
 public class ExcelUtility {
-	/**
-	 *This method used to read data from excel by specifing sheetname, row number and cell number 
-	 * @param sheetName
+	
+	//This method used to read data from excel by specifing sheetname, row number and cell number 
+	/*
+	 * * @param sheetName
+	 * 
 	 * @param rownum
+	 * 
 	 * @param cellnum
+	 * 
 	 * @return cell string value
+	 * 
 	 * @throws Throwable
 	 */
+	// */
 	public String getExcelData(String sheetName,int rownum,int cellnum) throws Throwable {
 		FileInputStream file=new FileInputStream(IPathConstant.EXCELPATH);
 		Workbook workbook=WorkbookFactory.create(file);
@@ -98,7 +101,6 @@ public class ExcelUtility {
 		workbook.createSheet(sheetname).createRow(rownum).createCell(column).setCellValue(value);
 		FileOutputStream writeFile=new FileOutputStream(IPathConstant.EXCELPATH);
 		workbook.write(writeFile);
-		
 	}
 
 }

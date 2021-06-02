@@ -10,16 +10,17 @@ public class SampleTest {
 	public static void main(String[] args) {
 		
 		 ArrayList<String> lst = new ArrayList(); 
+		 lst.add("sw22");
 		 lst.add("sw11"); 
 		 lst.add("sw00");
 		 lst.add("sw35");
 		 lst.add("sw89");
-		 lst.add("sw22");
+		 
 		 
 		 System.out.println(lst.get(0)); 
 		 System.out.println(lst.get(1));
-		System.out.println(lst.get(2));
-		 System.out.println(lst.get(3));
+		System.out.println(lst.get(3));
+		 System.out.println(lst.get(2));
 		System.out.println(lst.get(4));
 		 
 		System.out.println("================================================");
